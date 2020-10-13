@@ -11,6 +11,8 @@ import FileCopyIcon from "@material-ui/icons/FileCopy"
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt"
 import AppsIcon from "@material-ui/icons/Apps"
 import ExpandLessIcon  from "@material-ui/icons/ExpandLess"
+import ExpandMoreIcon  from "@material-ui/icons/ExpandMore"
+import AddIcon from "@material-ui/icons/Add"
 
 
 
@@ -28,13 +30,18 @@ function Sidebar() {
                 <CreateIcon/>                
             </div>
             <SidebarOption  Icon={InsertCommentIcon} title="Threads"/>
-            <SidebarOption  Icon={InboxIcon} title="Helpful Links"/>
+            <SidebarOption  Icon={InboxIcon} title="Darn Links"/>
             <SidebarOption  Icon={DraftsIcon} title="Discuss the Sphere"/>
             <SidebarOption  Icon={BookmarkBorderIcon} title="Darn Us"/>
             <SidebarOption  Icon={AppsIcon} title="Darn Theory"/>
             <SidebarOption  Icon={FileCopyIcon} title="Debate the Darn"/>
-            <SidebarOption  Icon={ExpandLessIcon} title="Inspirational Quotes"/>
-    
+            <SidebarOption  Icon={ExpandLessIcon} title="Less Darn Please"/>
+            <hr/>
+            <SidebarOption  Icon={ExpandMoreIcon} title="Channels"/>
+            <hr/>
+            <SidebarOption  Icon={AddIcon} addChannelOption="" title="Add Channel"/>
+            {/* connect to db and list all the channels */}
+            {/* sidebarOption */}
 
     
         </div>
