@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <Router>
         {!user ? (
-          <h1>Login Page</h1>
+          <Login/>
         ) : (
           <>
         
