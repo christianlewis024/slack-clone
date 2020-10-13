@@ -4,13 +4,13 @@ import Header from "./Header"
 import './App.css';
 
 function App() {
-  return (
-    // BEM naming convention __
-    <div className="app">
-     {/* header */}
+  return (    
+    <div className="app">    
      <Header/>
-     {/* sidebar */}
+     <div className="app__body">
+       {/* sidebar */}
      {/* react-router -> chat screen*/}
+     </div>     
     </div>
   );
 }
