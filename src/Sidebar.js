@@ -2,6 +2,20 @@ import React from 'react'
 import "./Sidebar.css"
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord"
 import CreateIcon from "@material-ui/icons/Create"
+import SidebarOption from "./SidebarOption"
+import InsertCommentIcon from "@material-ui/icons/InsertComment"
+import InboxIcon from "@material-ui/icons/Inbox"
+import DraftsIcon from "@material-ui/icons/Drafts"
+import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder"
+import FileCopyIcon from "@material-ui/icons/FileCopy"
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt"
+import AppsIcon from "@material-ui/icons/Apps"
+import ExpandLessIcon  from "@material-ui/icons/ExpandLess"
+
+
+
+
+
 
 function Sidebar() {
     return (
@@ -11,8 +25,18 @@ function Sidebar() {
                 <h2>Slack Workspace</h2>
                 <h3><FiberManualRecordIcon/>Christian L</h3>
                 </div>
-                <CreateIcon/>
+                <CreateIcon/>                
             </div>
+            <SidebarOption  Icon={InsertCommentIcon} title="Threads"/>
+            <SidebarOption  Icon={InboxIcon} title="Helpful Links"/>
+            <SidebarOption  Icon={DraftsIcon} title="Discuss the Sphere"/>
+            <SidebarOption  Icon={BookmarkBorderIcon} title="Darn Us"/>
+            <SidebarOption  Icon={AppsIcon} title="Darn Theory"/>
+            <SidebarOption  Icon={FileCopyIcon} title="Debate the Darn"/>
+            <SidebarOption  Icon={ExpandLessIcon} title="Inspirational Quotes"/>
+    
+
+    
         </div>
     )
 }
